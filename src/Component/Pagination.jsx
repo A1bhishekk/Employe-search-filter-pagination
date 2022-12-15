@@ -10,7 +10,7 @@ const Pagination = ({data}) => {
 
     useEffect(() => {
         const endOffset = itemOffset + itemsPerPage;
-        console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+        // console.log(`Loading items from ${itemOffset} to ${endOffset}`);
         const currentItems = data.slice(itemOffset, endOffset);
         const pageCount = Math.ceil(data.length / itemsPerPage);
         setCurrentItems(currentItems);
@@ -19,9 +19,9 @@ const Pagination = ({data}) => {
 
     const handlePageClick = (event) => {
         const newOffset = (event.selected * itemsPerPage) % data.length;
-        console.log(
-            `User requested page number ${event.selected}, which is offset ${newOffset}`
-        );
+        // console.log(
+        //     `User requested page number ${event.selected}, which is offset ${newOffset}`
+        // );
         setItemOffset(newOffset);
     };
 

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import axios from 'axios'
-import Table from './Component/Table'
 import { useEffect } from 'react'
 import Pagination from './Component/Pagination'
 
