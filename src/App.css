@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+img{
+  width: 30;
+  height: 30;
+  border-radius: 50%;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  /* text-align: center; */
+  /* border: 2px solid rgb(193, 15, 15); */
+}
+
+tr:nth-child(even) {
+  background-color: #FDD7E4
+}
+
+th {
+  background-color: #e8060a;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header h1 {
+  color: rgb(193, 15, 15);
+  font-size: 60px;
+}
+
+input {
+  width: 400px;
+  border: 2px solid rgb(193, 15, 15);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 22px;
+  outline: none;
+  margin-right: 30px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.card .card-item {
+  background-color: #FDD7E4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  color: #e8060a;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 30px;
+  gap: 30px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+
+}
+
+
+.pagination .page-num {
+  padding: 10px;
+  /* border: 2px solid rgb(193, 15, 15); */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination .page-num:hover{
+  background-color: #e8060a;
+  color: white;
+}
+
+
+.pagination .active {
+  background-color: #e8060a;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
