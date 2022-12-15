@@ -8,7 +8,7 @@ import Pagination from './Component/Pagination'
 const App = () => {
   const [query, setQuery] = useState('')
   const [data, setData] = useState([])
-  console.log(data)
+  // console.log(data)
 
 
   useEffect(() => {
