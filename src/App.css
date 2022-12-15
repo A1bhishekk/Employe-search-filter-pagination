@@ -40,13 +40,13 @@ th {
 }
 
 .header h1 {
-  color: rgb(193, 15, 15);
+  color: #e8060a;
   font-size: 60px;
 }
 
 input {
   width: 400px;
-  border: 2px solid rgb(193, 15, 15);
+  border: 3px solid #e8060a;
   border-radius: 5px;
   padding: 10px;
   font-size: 22px;
@@ -103,6 +103,14 @@ input {
   color: white;
 }
 
+.nav{
+  cursor: pointer;
+  background-color: #e8060a;
+  color: white;
+  padding:10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
 
 
 

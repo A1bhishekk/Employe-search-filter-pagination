@@ -35,12 +35,12 @@ const Pagination = ({data}) => {
                 onPageChange={handlePageClick}
                 pageRangeDisplayed={5}
                 pageCount={pageCount}
-                previousLabel="< previous"
+                previousLabel="< prev"
                 renderOnZeroPageCount={null}
                 containerClassName="pagination"
                 pageLinkClassName="page-num"
-                previousLinkClassName="page-num"
-                nextLinkClassName="page-num"
+                previousLinkClassName="nav"
+                nextLinkClassName="nav"
                 activeLinkClassName='active'
 
 
