@@ -3,7 +3,18 @@ import './App.css'
 import axios from 'axios'
 import { useEffect } from 'react'
 import Pagination from './Component/Pagination'
+import HashLoader from "react-spinners/HashLoader";
 
+const override={
+  margin: "0 auto",
+  borderColor: "red",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "80vh",
+  
+
+};
 const App = () => {
   const [query, setQuery] = useState('')
   const [data, setData] = useState([])
@@ -11,6 +22,8 @@ const App = () => {
   // console.log(data)
 
   // const keys = ['firstName', 'email', 'age','phone']
+
+ 
   const serach = (items) => {
     return items.filter((item) => {
       return Object.keys(item).some((key) => {
@@ -43,7 +56,17 @@ const App = () => {
           onChange={(e) => setQuery(e.target.value)}
         />
       </div>
-      {loading?<h1 style={{textAlign:"center",color:"red"}}>Loading...</h1>:<Pagination data={serach(data)} />}
+      {loading?
+      <HashLoader
+
+        color={"red"}
+        loading={loading}
+        cssOverride={override}
+        size={50}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+      :<Pagination data={serach(data)} />}
     </>
   )
 }
